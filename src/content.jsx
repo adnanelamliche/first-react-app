@@ -1,6 +1,8 @@
 
 import Studentclick from "./click.jsx";
 import { useState } from "react";
+import Header from "./header.jsx";
+import Aside from "./side.jsx";
 
 export default function Content() {
 
@@ -106,6 +108,11 @@ export default function Content() {
   }
 
   return (
+    <>
+    <Header />
+    
+    <div className="flex">
+      <Aside/>
     <main className="flex-1 p-8">
 
       <h2 className="text-3xl font-bold">
@@ -220,5 +227,7 @@ export default function Content() {
       </div>
 
     </main>
+    </div>
+    </>
   );
 }

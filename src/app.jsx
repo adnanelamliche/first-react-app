@@ -1,16 +1,16 @@
+import { Route,Routes } from "react-router-dom"
 import Header from "./header.jsx"
 import Aside from "./side.jsx"
 import Content from "./content.jsx"
+import Home from "./Home.jsx"
 function App() {
   return (
  <>
-    <Header/>
-    
-    <div className="flex">
-      <Aside />
-    <Content/>
-    </div>
+    <Routes>
+      <Route path="/acceuil" element={<Home />} />
+      <Route path="/etudiants" element={<Content/>} />
 
+    </Routes>
 
  </>
   )
